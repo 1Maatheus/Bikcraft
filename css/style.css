@@ -559,5 +559,135 @@ body {
     justify-self: center;
   }
 }
+.seguros-bg {
+  background: #111111;
+}
+
+.seguro {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 40px;
+  align-items: center;
+  max-width: 1200px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.seguro h2 {
+  grid-column: 1/-1;
+  font-size: 4rem;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  line-height: 1.125;
+  color: #ffffff;
+}
+.seguro h2 span {
+  color: #ffbb00;
+}
+.seguro h3 {
+  font-size: 2rem;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  line-height: 1.25;
+  color: #9c9c9c;
+}
+.seguro .ouro {
+  color: #ffbb00;
+}
+
+.botao {
+  display: inline-block;
+  padding: 16px 32px;
+  background: linear-gradient(#ffbf00, #f2a50c);
+  border-radius: 4px;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.1);
+  text-transform: uppercase;
+  color: #332200;
+  font-size: 18px;
+  line-height: 1.33;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  max-width: max-content;
+}
+.botao:hover {
+  background: linear-gradient(#ffb60d, #e59317);
+}
+
+.botao.secundario {
+  background: #2e2e2e;
+  color: #ededed;
+}
+.botao.secundario:hover {
+  background: #404040;
+}
+
+.seguros-item {
+  background-color: #000000;
+  padding: 32px 32px 32px 60px;
+  display: grid;
+  grid-template-columns: 1fr auto;
+}
+.seguros-item ul {
+  font-size: 1.125rem;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  line-height: 1.35;
+  color: #ffffff;
+  grid-column: 1/-1;
+  margin-bottom: 32px;
+}
+.seguros-item li {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+.seguros-item li::before {
+  content: "";
+  display: inline-block;
+  width: 13px;
+  height: 9px;
+  background-image: url(../assets/icones/lista.svg);
+  position: absolute;
+  left: -21px;
+}
+.seguros-item li + li {
+  margin-top: 20px;
+}
+.seguros-item h3 {
+  margin-bottom: 40px;
+}
+.seguros-item span {
+  grid-column: 2;
+  display: block;
+  text-align: right;
+}
+.seguros-item a {
+  grid-column: 1/-1;
+}
+
+.seguro-preco {
+  font-size: 2rem;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  line-height: 1.25;
+  color: #ffffff;
+}
+
+.seguro-mes {
+  font-size: 0.75rem;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  line-height: 1.35;
+  color: #9c9c9c;
+}
+
+@media (max-width: 800px) {
+  .seguro {
+    grid-template-columns: 1fr;
+  }
+}
 
 /*# sourceMappingURL=style.css.map */
