@@ -58,5 +58,25 @@
   .depoimento-conteudo {
     padding: 40px 20px;
     justify-self: center;
+    blockquote {
+      @include tipo-1-l;
+      color: $cor-p5;
+    }
+    p {
+      &::before {
+        content: "“";
+        font-size: 4rem;
+        color: $cor-p2;
+        position: absolute;
+        left: -25px;
+        top: -20px;
+      }
+      &::after {
+        content: "”";
+        font-size: 4rem;
+        color: $cor-p2;
+        position: absolute;
+      }
+    }
   }
 }
