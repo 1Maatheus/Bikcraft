@@ -1,0 +1,171 @@
+.bicicletas {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  @include container;
+  gap: 40px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  li {
+    display: flex;
+    align-items: center;
+  }
+}
+
+.bicicletas-imagem {
+  position: relative;
+  span {
+    @include tipo-2-m;
+    color: $cor-0;
+    background: $cor-12;
+    position: absolute;
+    right: 0px;
+    top: 20px;
+    display: inline-block;
+    padding: 8px 16px 8px 8px;
+    border-radius: 4px 0px 0px 4px;
+  }
+}
+
+.bicicletas-conteudo {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  align-content: start;
+  h2 {
+    @include tipo-1-xl;
+    grid-column: 1 / -1;
+    margin-bottom: 20px;
+    &::before {
+      content: "";
+      display: block;
+      width: 12px;
+      height: 8px;
+      background-color: $cor-p1;
+      margin-bottom: 8px;
+    }
+  }
+  p {
+    @include tipo-2-s;
+    color: $cor-8;
+    grid-column: 1 / -1;
+    margin-bottom: 32px;
+  }
+  ul {
+    @include tipo-1-m;
+    color: $cor-8;
+    display: grid;
+    gap: 16px;
+  }
+  .botao.seta {
+    place-self: end;
+    display: flex;
+    align-items: center;
+    &::after {
+      content: "";
+      display: inline-block;
+      width: 18px;
+      height: 10px;
+      margin-left: 12px;
+      background: url(../assets/icones/seta.svg);
+    }
+    &:hover::after {
+      transform: translateX(4px);
+      transition: 0.4s;
+    }
+  }
+  img {
+    width: 24px;
+    margin-right: 9px;
+  }
+}
+
+.bicicletas-conteudo-meio {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  align-content: start;
+  h2 {
+    @include tipo-1-xl;
+    color: $cor-0;
+    grid-column: 1 / -1;
+    margin-bottom: 20px;
+    &::before {
+      content: "";
+      display: block;
+      width: 12px;
+      height: 8px;
+      background-color: $cor-p1;
+      margin-bottom: 8px;
+    }
+  }
+  p {
+    @include tipo-2-s;
+    color: $cor-5;
+    grid-column: 1 / -1;
+    margin-bottom: 32px;
+  }
+  ul {
+    @include tipo-1-m;
+    color: $cor-5;
+    display: grid;
+    gap: 16px;
+  }
+
+  .botao.seta {
+    place-self: end;
+    display: flex;
+    align-items: center;
+    &::after {
+      content: "";
+      display: inline-block;
+      width: 18px;
+      height: 10px;
+      margin-left: 12px;
+      background: url(../assets/icones/seta.svg);
+    }
+    &:hover::after {
+      transform: translateX(4px);
+      transition: 0.4s;
+    }
+  }
+  img {
+    width: 24px;
+    margin-right: 9px;
+  }
+}
+
+.bicicletas-bg-meio {
+  background: linear-gradient(to right, $cor-0 30%, $cor-11 0%);
+}
+
+@media (max-width: 800px) {
+  .bicicletas {
+    grid-template-columns: 1fr;
+    gap: 20px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+  .bicicletas-bg-meio {
+    background: $cor-11;
+  }
+}
+
+@media (max-width: 600px) {
+  .bicicletas-conteudo {
+    grid-template-columns: 1fr;
+    .botao.seta {
+      place-self: start;
+    }
+  }
+  .bicicletas-conteudo-meio {
+    grid-template-columns: 1fr;
+    .botao.seta {
+      place-self: start;
+    }
+  }
+  .bicicletas {
+    ul {
+      font-size: 1rem;
+      grid-template-columns: 1fr 1fr;
+      margin-bottom: 32px;
+    }
+  }
+}
