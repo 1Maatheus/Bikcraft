@@ -1,0 +1,112 @@
+.tecnologia-bg {
+  background: $cor-11;
+  box-shadow: inset 0 80px $cor-0, inset 0 -80px $cor-0;
+}
+
+.tecnologia {
+  @include container;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+}
+
+.tecnologia-imagem img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: left;
+}
+
+.title {
+  @include tipo-2-l-b;
+  color: $cor-5;
+  display: block;
+  margin-bottom: 20px;
+}
+
+.tecnologia-conteudo {
+  padding-top: 160px;
+  padding-bottom: 160px;
+  h2 {
+    @include tipo-1-xxl;
+    color: $cor-0;
+    margin-bottom: 32px;
+    span {
+      color: $cor-p1;
+    }
+  }
+  h3 {
+    @include tipo-1-m;
+    color: $cor-0;
+  }
+}
+
+.tecnologia-vantagens {
+  display: flex;
+  gap: 40px;
+  h3 {
+    margin-bottom: 8px;
+    width: max-content;
+  }
+  img {
+    width: 24px;
+    margin-bottom: 8px;
+  }
+}
+
+.subT {
+  @include tipo-2-l;
+  color: $cor-5;
+  margin-bottom: 20px;
+}
+
+.p1 {
+  @include tipo-2-s;
+  color: $cor-5;
+}
+
+.link {
+  display: inline-block;
+  color: $cor-p1;
+  font: 500 1.5rem/1.5 "Poppins", sans-serif;
+  text-transform: uppercase;
+  margin-bottom: 80px;
+  &::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 4px;
+    background-color: currentColor;
+  }
+  &:hover {
+    color: $cor-0;
+  }
+}
+
+@media (max-width: 800px) {
+  .tecnologia-bg {
+    box-shadow: initial;
+  }
+  .tecnologia {
+    grid-template-columns: 1fr;
+    a {
+      margin-bottom: 60px;
+    }
+  }
+  .tecnologia-conteudo {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    h2 {
+      @include tipo-1-xl;
+    }
+  }
+  .tecnologia-imagem {
+    display: none;
+  }
+}
+
+@media (max-width: 600px) {
+  .tecnologia-vantagens {
+    flex-direction: column;
+  }
+}

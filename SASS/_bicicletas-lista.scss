@@ -22,9 +22,6 @@
   li {
     min-width: 280px;
   }
-}
-
-article {
   h3 {
     @include tipo-1-xl;
     margin-bottom: 8px;
@@ -42,12 +39,8 @@ article {
   }
   h2 {
     @include tipo-1-xxl;
+    @include container;
     margin-bottom: 40px;
-    max-width: 1200px;
-    padding-left: 20px;
-    padding-right: 20px;
-    margin-left: auto;
-    margin-right: auto;
   }
   span {
     color: $cor-p1;

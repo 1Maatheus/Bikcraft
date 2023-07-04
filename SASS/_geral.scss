@@ -101,3 +101,13 @@ body {
   letter-spacing: 0.015em;
   text-transform: uppercase;
 }
+
+//Container
+
+@mixin container() {
+  max-width: 1200px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
