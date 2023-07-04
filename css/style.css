@@ -21,6 +21,10 @@ img {
   display: block;
 }
 
+img[src$=".jpg"] {
+  border-radius: 4px;
+}
+
 body {
   font-family: Arial, Helvetica, sans-serif;
   color: #111111;
@@ -45,14 +49,15 @@ body {
   display: flex;
   flex-wrap: wrap;
   gap: 40px;
+  font-size: 1.125rem;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  line-height: 1.35;
 }
 .header-menu a {
   padding: 16px 0px;
   display: inline-block;
   color: #ffffff;
-  font-size: 18px;
-  font-family: "Poppins";
-  font-weight: 400;
   position: relative;
 }
 .header-menu a::after {
@@ -112,7 +117,7 @@ body {
 }
 .introducao h1 {
   margin-bottom: 32px;
-  font-size: 64px;
+  font-size: 4rem;
   font-family: "Poppins", sans-serif;
   font-weight: 600;
   line-height: 1.125;
@@ -123,7 +128,7 @@ body {
 .introducao p {
   margin-bottom: 20px;
   color: #b2b2b2;
-  font-size: 24px;
+  font-size: 1.5rem;
   font-family: "Roboto", sans-serif;
   font-weight: 400;
   line-height: 1.125;
@@ -157,10 +162,16 @@ body {
 
 @media (max-width: 1200px) {
   .introducao h1 {
-    font-size: 48px;
+    font-size: 4rem;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    line-height: 1.125;
   }
   .introducao p {
-    font-size: 18px;
+    font-size: 1.5rem;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    line-height: 1.125;
   }
 }
 @media (max-width: 800px) {
@@ -181,6 +192,12 @@ body {
     height: 300px;
     width: 100%;
   }
+  .introducao p {
+    font-size: 1.125rem;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    line-height: 1.35;
+  }
   .introducao-conteudo {
     padding-bottom: 0px;
   }
@@ -189,6 +206,83 @@ body {
   .introducao a {
     padding: 12px 16px;
     font-size: 16px;
+  }
+}
+.bicicletas-lista {
+  padding-top: 60px;
+  padding-bottom: 120px;
+}
+.bicicletas-lista ul {
+  display: flex;
+  gap: 40px;
+  padding: 0 20px 20px 20px;
+  max-width: 1400px;
+  margin-left: auto;
+  margin-right: auto;
+  overflow-x: auto;
+}
+.bicicletas-lista img {
+  margin-bottom: 16px;
+}
+.bicicletas-lista a {
+  display: block;
+}
+.bicicletas-lista a:hover h3::before {
+  width: 24px;
+}
+.bicicletas-lista li {
+  min-width: 280px;
+}
+
+article h3 {
+  font-size: 2rem;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  line-height: 1.25;
+  margin-bottom: 8px;
+  display: flex;
+  align-items: center;
+}
+article h3::before {
+  content: "";
+  display: inline-block;
+  background-color: #ffbb00;
+  height: 8px;
+  width: 12px;
+  margin-right: 8px;
+  transition: width 0.3s;
+}
+article h2 {
+  font-size: 4rem;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  line-height: 1.125;
+  margin-bottom: 40px;
+  max-width: 1200px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+article span {
+  color: #ffbb00;
+}
+
+.preco {
+  font-size: 1.125rem;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  line-height: 1.35;
+  color: #595959;
+  padding-left: 20px;
+}
+
+@media (max-width: 800px) {
+  .bicicletas-lista {
+    padding-bottom: 60px;
+  }
+  .bicicletas-lista ul {
+    gap: 20px;
   }
 }
 

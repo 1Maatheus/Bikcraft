@@ -17,13 +17,11 @@
   display: flex;
   flex-wrap: wrap;
   gap: 40px;
+  @include tipo-1-m;
   a {
     padding: 16px 0px;
     display: inline-block;
     color: $cor-0;
-    font-size: 18px;
-    font-family: "Poppins";
-    font-weight: 400;
     position: relative;
     &::after {
       content: "";
