@@ -2,6 +2,10 @@
   background: $cor-11;
 }
 
+#seguros .seguro {
+  padding-top: 0px;
+}
+
 .seguro {
   padding-top: 60px;
   padding-bottom: 60px;
@@ -58,6 +62,7 @@
   padding: 32px 32px 32px 60px;
   display: grid;
   grid-template-columns: 1fr auto;
+  border-radius: 4px;
   ul {
     @include tipo-2-m;
     color: $cor-0;
@@ -104,8 +109,63 @@
   color: $cor-6;
 }
 
+.vantagens-bg {
+  background: $cor-12;
+}
+
+.vantagens {
+  padding-top: 120px;
+  padding-bottom: 120px;
+  @include container;
+  h2 {
+    @include tipo-1-xxl;
+    color: $cor-0;
+    margin-bottom: 60px;
+  }
+
+  span {
+    color: $cor-p1;
+  }
+
+  h3 {
+    @include tipo-1-l;
+    color: $cor-0;
+    margin-bottom: 8px;
+  }
+
+  img {
+    margin-bottom: 8px;
+  }
+
+  p {
+    @include tipo-2-s;
+    color: $cor-5;
+  }
+
+  ul {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, max-content));
+    gap: 40px 80px;
+  }
+}
+
 @media (max-width: 800px) {
   .seguro {
     grid-template-columns: 1fr;
+  }
+
+  #seguros .seguro {
+    margin-top: 10px;
+  }
+
+  .vantagens {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    h2 {
+      margin-bottom: 40px;
+    }
+    ul {
+      gap: 20px;
+    }
   }
 }

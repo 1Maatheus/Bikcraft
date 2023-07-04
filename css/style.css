@@ -584,6 +584,10 @@ body {
   background: #111111;
 }
 
+#seguros .seguro {
+  padding-top: 0px;
+}
+
 .seguro {
   padding-top: 60px;
   padding-bottom: 60px;
@@ -650,6 +654,7 @@ body {
   padding: 32px 32px 32px 60px;
   display: grid;
   grid-template-columns: 1fr auto;
+  border-radius: 4px;
 }
 .seguros-item ul {
   font-size: 1.125rem;
@@ -705,9 +710,70 @@ body {
   color: #9c9c9c;
 }
 
+.vantagens-bg {
+  background: #000000;
+}
+
+.vantagens {
+  padding-top: 120px;
+  padding-bottom: 120px;
+  max-width: 1200px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.vantagens h2 {
+  font-size: 4rem;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  line-height: 1.125;
+  color: #ffffff;
+  margin-bottom: 60px;
+}
+.vantagens span {
+  color: #ffbb00;
+}
+.vantagens h3 {
+  font-size: 1.5rem;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #ffffff;
+  margin-bottom: 8px;
+}
+.vantagens img {
+  margin-bottom: 8px;
+}
+.vantagens p {
+  font-size: 1rem;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #b2b2b2;
+}
+.vantagens ul {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, max-content));
+  gap: 40px 80px;
+}
+
 @media (max-width: 800px) {
   .seguro {
     grid-template-columns: 1fr;
+  }
+  #seguros .seguro {
+    margin-top: 10px;
+  }
+  .vantagens {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  .vantagens h2 {
+    margin-bottom: 40px;
+  }
+  .vantagens ul {
+    gap: 20px;
   }
 }
 .footer-bg {
@@ -1080,6 +1146,81 @@ body {
     font-size: 1rem;
     grid-template-columns: 1fr 1fr;
     margin-bottom: 32px;
+  }
+}
+.perguntas {
+  padding-top: 120px;
+  padding-bottom: 120px;
+  max-width: 1200px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.perguntas h2 {
+  font-size: 4rem;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  line-height: 1.125;
+  margin-bottom: 60px;
+}
+.perguntas span {
+  color: #ffbb00;
+}
+.perguntas dl div {
+  padding: 20px;
+  border-radius: 4px;
+}
+.perguntas dl div:nth-child(odd) {
+  background-color: #f7f7f7;
+}
+.perguntas dt {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+  font-size: 1.125rem;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  line-height: 1.35;
+}
+.perguntas dt::before {
+  content: "";
+  display: inline-block;
+  width: 12px;
+  height: 8px;
+  background-color: #ffbb00;
+}
+.perguntas dt::after {
+  content: "";
+  display: inline-block;
+  width: 14px;
+  height: 6px;
+  background-image: url(../assets/icones/seta-abrir.svg);
+}
+.perguntas dt:hover::after {
+  transform: rotate(180deg);
+  transition: 0.3s;
+}
+.perguntas dd {
+  padding-left: 20px;
+  padding-top: 16px;
+  max-width: 80ch;
+  font-size: 1rem;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #404040;
+}
+
+@media (max-width: 800px) {
+  .perguntas {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  .perguntas h2 {
+    margin-bottom: 40px;
   }
 }
 
