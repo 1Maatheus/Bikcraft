@@ -20,6 +20,7 @@ a {
 
 img {
   max-width: 100%;
+  height: auto;
   display: block;
 }
 
@@ -1852,9 +1853,6 @@ body {
 .orcamento-detalhes li img {
   width: 16px;
   margin-right: 8px;
-}
-.orcamento-detalhes img {
-  height: 100%;
 }
 
 .orcamento-produto input:checked + label + .orcamento-detalhes {
