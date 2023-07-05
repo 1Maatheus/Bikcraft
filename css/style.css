@@ -1807,7 +1807,6 @@ body {
 
 #bikcraft:checked ~ #orcamento-bikcraft,
 #seguro:checked ~ #orcamento-seguro {
-  display: block;
   display: grid;
   gap: 20px;
 }
