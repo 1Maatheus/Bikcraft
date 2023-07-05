@@ -1,3 +1,41 @@
+.seguro-bg {
+  background-color: $cor-11;
+  box-shadow: inset 0 120px $cor-0, inset 0 -120px $cor-12;
+}
+
+.seguro {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  @include container;
+}
+
+.seguro-imagem {
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+.seguro-conteudo {
+  padding-top: 180px;
+  padding-bottom: 180px;
+  h2 {
+    @include tipo-1-xxl;
+    color: $cor-0;
+    margin-bottom: 32px;
+  }
+  span {
+    color: $cor-p1;
+  }
+  p {
+    @include tipo-2-l;
+    color: $cor-5;
+    margin-bottom: 20px;
+  }
+}
+
 .bicicleta {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -116,6 +154,25 @@
 }
 
 @media (max-width: 800px) {
+  .seguro-bg {
+    background-color: $cor-11;
+    box-shadow: inset 0 -60px $cor-12;
+  }
+
+  .seguro-imagem {
+    height: 200px;
+  }
+
+  .seguro {
+    grid-template-columns: 1fr;
+  }
+
+  .seguro-conteudo {
+    grid-row: 1;
+    padding-top: 40px;
+    padding-bottom: 0px;
+  }
+
   .bicicleta {
     grid-template-columns: 1fr;
     padding-top: 40px;

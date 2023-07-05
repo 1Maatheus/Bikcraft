@@ -6,7 +6,7 @@
   padding-top: 0px;
 }
 
-.seguro {
+.seguros {
   padding-top: 60px;
   padding-bottom: 60px;
   display: grid;
@@ -150,11 +150,11 @@
 }
 
 @media (max-width: 800px) {
-  .seguro {
+  .seguros {
     grid-template-columns: 1fr;
   }
 
-  #seguros .seguro {
+  #seguros .seguros {
     margin-top: 10px;
   }
 
