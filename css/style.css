@@ -38,6 +38,10 @@ body {
   color: #111111;
 }
 
+.titulo {
+  background: url(../assets/dec/top-right.svg) no-repeat top right 20px;
+}
+
 .header-bg {
   background-color: #000000;
 }
@@ -112,7 +116,7 @@ body {
   }
 }
 .introducao-bg {
-  background-color: #000000;
+  background: #000000 url("../assets/dec/bottom-left.svg") no-repeat bottom 160px left 20px;
   color: #ffffff;
   box-shadow: inset 0 -120px #ffffff;
 }
@@ -511,6 +515,7 @@ body {
 }
 
 .depoimento-conteudo {
+  background: url(../assets/dec/bottom-right-p.svg) no-repeat bottom 40px right 40px;
   padding: 40px 40px 80px 80px;
   align-self: end;
 }
@@ -586,7 +591,7 @@ body {
     position: absolute;
   }
 }
-@media (max-width: 2200px) {
+@media (min-width: 1200px) {
   .depoimento img {
     max-height: 520px;
   }
@@ -968,6 +973,7 @@ body {
 }
 
 .bicicletas {
+  background: url(../assets/dec/top-right.svg) no-repeat top 40px right 20px;
   display: grid;
   grid-template-columns: 1fr 1fr;
   max-width: 1200px;
@@ -1475,7 +1481,7 @@ body {
 
 .contato-dados {
   border-radius: 5px 0 0 5px;
-  background: #000000;
+  background: #000000 url(../assets/dec/bottom-left.svg) no-repeat bottom 20px left 20px;
 }
 .contato-dados h2 {
   margin-bottom: 60px;
@@ -1483,7 +1489,7 @@ body {
 
 .contato-formulario {
   border-radius: 0 0 5px 5px;
-  background: #ffffff;
+  background: #ffffff url(../assets/dec/bottom-right.svg) no-repeat bottom 20px right 20px;
 }
 
 .contato-endereco {
@@ -1547,6 +1553,7 @@ body {
   }
   .contato-dados {
     border-radius: 5px 5px 0 0;
+    background: #000000;
   }
   .contato-dados h2 {
     margin-bottom: 32px;
@@ -1735,7 +1742,7 @@ body {
   border-radius: 5px 0 0 5px;
   padding: 60px;
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
-  background: #000000;
+  background: #000000 url(../assets/dec/bottom-left.svg) no-repeat bottom 20px left 20px;
 }
 .orcamento-produto label {
   color: #cccccc;
@@ -1813,7 +1820,7 @@ body {
 }
 
 .orcamento-dados {
-  background: #ffffff;
+  background: #ffffff url(../assets/dec/bottom-right.svg) no-repeat bottom 20px right 20px;
   padding: 60px;
   border-radius: 0 5px 5px 0;
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
@@ -1874,6 +1881,7 @@ body {
   }
   .orcamento-produto {
     border-radius: 0 0 5px 5px;
+    background: #000000;
   }
 }
 @media (max-width: 400px) {

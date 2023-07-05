@@ -12,6 +12,8 @@
 }
 
 .depoimento-conteudo {
+  background: url(../assets/dec/bottom-right-p.svg) no-repeat bottom 40px right
+    40px;
   padding: 40px 40px 80px 80px;
   align-self: end;
   blockquote {
@@ -81,7 +83,7 @@
   }
 }
 
-@media (max-width: 2200px) {
+@media (min-width: 1200px) {
   .depoimento {
     img {
       max-height: 520px;
