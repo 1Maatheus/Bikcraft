@@ -86,7 +86,7 @@ body {
   transition: 0.5s;
   position: absolute;
 }
-.header-menu a:hover::after {
+.header-menu a:hover::after, .header-menu a.ativo::after {
   width: 100%;
 }
 

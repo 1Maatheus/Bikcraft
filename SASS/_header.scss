@@ -33,7 +33,8 @@
       transition: 0.5s;
       position: absolute;
     }
-    &:hover::after {
+    &:hover::after,
+    &.ativo::after {
       width: 100%;
     }
   }
