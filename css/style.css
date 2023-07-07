@@ -42,6 +42,32 @@ body {
   background: url(../assets/dec/top-right.svg) no-repeat top right 20px;
 }
 
+.fadeInDown {
+  transform: translate3d(0, -20px, 0);
+}
+
+.fadeInUp {
+  transform: translate3d(0, 20px, 0);
+}
+
+.fadeInRight {
+  transform: translate3d(20px, 0, 0);
+}
+
+.fadeInLeft {
+  transform: translate3d(-20px, 0, 0);
+}
+
+[data-anime] {
+  opacity: 0;
+}
+
+.anime {
+  opacity: 1;
+  transform: none;
+  transition: transform 0.8s, opacity 0.8s;
+}
+
 .header-bg {
   background-color: #000000;
 }
@@ -1191,36 +1217,41 @@ body {
 .perguntas dl div:nth-child(odd) {
   background-color: #f7f7f7;
 }
-.perguntas dt {
+.perguntas button {
   display: grid;
   grid-template-columns: auto 1fr auto;
   align-items: center;
+  text-align: left;
   gap: 8px;
   cursor: pointer;
   font-size: 1.125rem;
   font-family: "Poppins", sans-serif;
   font-weight: 600;
   line-height: 1.35;
+  border: none;
+  background: none;
+  width: 100%;
 }
-.perguntas dt::before {
+.perguntas button::before {
   content: "";
   display: inline-block;
   width: 12px;
   height: 8px;
   background-color: #ffbb00;
 }
-.perguntas dt::after {
+.perguntas button::after {
   content: "";
   display: inline-block;
   width: 14px;
   height: 6px;
   background-image: url(../assets/icones/seta-abrir.svg);
 }
-.perguntas dt:hover::after {
+.perguntas button:hover::after, .perguntas button[aria-expanded=true]::after {
   transform: rotate(180deg);
   transition: 0.3s;
 }
 .perguntas dd {
+  display: none;
   padding-left: 20px;
   padding-top: 16px;
   max-width: 80ch;
@@ -1229,6 +1260,9 @@ body {
   font-weight: 400;
   line-height: 1.5;
   color: #404040;
+}
+.perguntas dd.ativa {
+  display: block;
 }
 
 @media (max-width: 800px) {

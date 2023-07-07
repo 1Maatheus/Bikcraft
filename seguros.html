@@ -42,7 +42,7 @@
         
         
           <div class="seguros">
-            <div class="seguros-item">
+            <div class="seguros-item fadeInLeft"  data-anime="200">
               <h3>PRATA</h3>
               <span class="seguro-preco"
                 >R$ 199 <span class="seguro-mes">mensal</span></span
@@ -56,7 +56,7 @@
     
               <a class="botao secundario" href="./orcamento.html?tipo=seguro&produto=prata">Inscreva-se</a>
             </div>
-            <div class="seguros-item">
+            <div class="seguros-item fadeInRight" data-anime="400">
               <h3 class="ouro">OURO</h3>
               <span class="seguro-preco"
                 >R$ 299 <span class="seguro-mes">mensal</span></span
@@ -125,33 +125,33 @@
       
       <dl>
         <div>
-          <dt>Qual forma de pagamento vocês aceitam?</dt>
-          <dd>Aceitamos pagamentos parcelados em todos os cartões de crédito. Para pagamentos à vista também aceitarmos PIX e Boleto através do PagSeguro.</dd>
+          <dt><button aria-expanded="true" aria-controls="pergunta1">Qual forma de pagamento vocês aceitam?</button></dt>
+          <dd id="pergunta1" class="ativa">Aceitamos pagamentos parcelados em todos os cartões de crédito. Para pagamentos à vista também aceitarmos PIX e Boleto através do PagSeguro.</dd>
         </div>
 
         <div>
-          <dt>Como posso entrar em contato?</dt>
-          <dd>Aceitamos pagamentos parcelados em todos os cartões de crédito. Para pagamentos à vista também aceitarmos PIX e Boleto através do PagSeguro.</dd>
+          <dt><button aria-expanded="false"  aria-controls="pergunta2">Como posso entrar em contato?</button></dt>
+          <dd id="pergunta2">Aceitamos pagamentos parcelados em todos os cartões de crédito. Para pagamentos à vista também aceitarmos PIX e Boleto através do PagSeguro.</dd>
         </div>
 
         <div>
-          <dt>Vocês possuem algum desconto?</dt>
-          <dd>Aceitamos pagamentos parcelados em todos os cartões de crédito. Para pagamentos à vista também aceitarmos PIX e Boleto através do PagSeguro.</dd>
+          <dt><button aria-expanded="false" aria-controls="pergunta3">Vocês possuem algum desconto?</button></dt>
+          <dd id="pergunta3">Aceitamos pagamentos parcelados em todos os cartões de crédito. Para pagamentos à vista também aceitarmos PIX e Boleto através do PagSeguro.</dd>
         </div>
 
         <div>
-          <dt>Qual a garantia que possuo?</dt>
-          <dd>Aceitamos pagamentos parcelados em todos os cartões de crédito. Para pagamentos à vista também aceitarmos PIX e Boleto através do PagSeguro.</dd>
+          <dt><button aria-expanded="false" aria-controls="pergunta4">Qual a garantia que possuo?</button></dt>
+          <dd id="pergunta4">Aceitamos pagamentos parcelados em todos os cartões de crédito. Para pagamentos à vista também aceitarmos PIX e Boleto através do PagSeguro.</dd>
         </div>
 
         <div>
-          <dt>Posso parcelar no boleto?</dt>
-          <dd>Aceitamos pagamentos parcelados em todos os cartões de crédito. Para pagamentos à vista também aceitarmos PIX e Boleto através do PagSeguro.</dd>
+          <dt><button aria-expanded="false" aria-controls="pergunta5">Posso parcelar no boleto?</button></dt>
+          <dd id="pergunta5">Aceitamos pagamentos parcelados em todos os cartões de crédito. Para pagamentos à vista também aceitarmos PIX e Boleto através do PagSeguro.</dd>
         </div>
 
         <div>
-          <dt>Quantas trocas posso fazer ao ano?</dt>
-          <dd>Aceitamos pagamentos parcelados em todos os cartões de crédito. Para pagamentos à vista também aceitarmos PIX e Boleto através do PagSeguro.</dd>
+          <dt><button aria-expanded="false" aria-controls="pergunta6">Quantas trocas posso fazer ao ano?</button></dt>
+          <dd id="pergunta6">Aceitamos pagamentos parcelados em todos os cartões de crédito. Para pagamentos à vista também aceitarmos PIX e Boleto através do PagSeguro.</dd>
         </div>
       </dl>
     </article>
@@ -214,6 +214,7 @@
       </div>
     </footer>
     <!-- Fim do footer -->
+    <script src="./javascript/plugins/simple-anime.js"></script>
     <script src="./javascript/script.js"></script>
   </body>
 </html>
