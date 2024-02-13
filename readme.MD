@@ -1,4 +1,4 @@
-# Bikcraft, projeto criado na Origamid
+# Bikcraft, projeto criado na Origamid 🐺
 
 ## Preview:
 <img src="/readme/preview.png">
